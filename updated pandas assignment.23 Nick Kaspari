@@ -1,0 +1,10 @@
+$ grep -v "Zoo" pandas.txt >> pandas-zoo
+$ $ awk '{ print $1,$3,$2}' | sort -k2 pandas.txt >> updated_2
+$ cat pandas.txt | awk '{print $5}' | sort >> ZOONAMESSORT
+$ $ sed 's/male/M/g; s/female/F/g' pandas.txt >> updated_4
+$ grep -c 'October\|Female' pandas.txt
+$ cat -n pandas.txt >>LINE_NUMBERS
+$ sed -n '1p;6p;17p' pandas.txt >> 1_6_17_lines
+$ grep -i "x" p pandas.txt >>PANDAS_WITH_X
+$ awk '{print$5}' pandas.txt | sort -u >> question_9
+$ awk '$4 <= 10 {print$1,$4;}' pandas.txt | sort -k2 >> updated_10
